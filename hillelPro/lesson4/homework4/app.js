@@ -50,11 +50,17 @@ const isAdult = users.map(user => {
 });
 
 //4...
-const average = users.reduce((prev, curr) => {
-    curr.average = curr.marks ? curr.marks.reduce((prev, curr) => prev + curr) / curr.marks.length : "Property marks is not defined";
-    prev.push(curr);
+
+const average = (users.reduce((prev, curr, index, arr) => {
+    prev.push(...curr.marks);
+    if (arr[arr.length - 1] === curr){
+        let summ = prev.reduce((prev, curr) => prev + curr);
+        prev = summ / prev.length
+        return prev
+    }
     return prev;
-}, []);
+
+}, []))
 
 //5...
 const addresses0 = users.reduce((prev, curr, index) => {
