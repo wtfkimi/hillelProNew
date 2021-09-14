@@ -54,14 +54,14 @@ const average = users.reduce((prev, curr) => {
     curr.average = curr.marks ? curr.marks.reduce((prev, curr) => prev + curr) / curr.marks.length : "Property marks is not defined";
     prev.push(curr);
     return prev;
-}, [])
+}, []);
 
 //5...
 const addresses0 = users.reduce((prev, curr, index) => {
     prev.countries.push(curr.address.country ? curr.address.country : `Country is not defined in user by index ${index}`);
     prev.cities.push(curr.address.city ? curr.address.city : `City is not defined in user by index ${index}`);
     return prev;
-}, {countries: [], cities: []})
+}, {countries: [], cities: []});
 
 //Unique addresses
 let unique = {
