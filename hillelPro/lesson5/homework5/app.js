@@ -128,7 +128,7 @@ let newUsers = [
 
 // Function 2;
 
-function getUsersMoreThanTwoProperty() {
+function getUsersMoreThanTwoProperty(newUsers) {
   return newUsers.reduce((acc, el) => {
    Object.keys(el).length > 2 ? acc.push(el) : null; // ternary operator
    return acc;
