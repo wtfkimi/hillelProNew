@@ -47,11 +47,9 @@ const isNotAdult = users.find(user => user.age < 18); // arrow function implemen
 const foreignStudent = users.filter(user => user.address.country !== "Ukraine"); // arrow function implemented in hw4;
 
 //3...
-const isAdult = users.map(user => {
-  user.isAdult = user.age >= 18; // non need ternary operator but it can be used: user age >= 18 ? true : false
-  return user
-});
 
+
+const editedUsers = users.map((user) => ({ ...user, isAdult: user.age >= 18 }));
 //4...
 
 const average0 = (users.reduce((prev, curr, index, arr) => {
@@ -152,5 +150,19 @@ function propertyStringAndNumber (users) {
   }, [])
 }
 
+
 console.log(propertyStringAndNumber(newUsers));
+
+//Function 3
+function propertyStringAndNumber0(arrayOfObjects) {
+  return arrayOfObjects.reduce((acc, obj) => {
+    const values = Object.values(obj);
+
+    const isObjectIncludesNumStringValues =
+        values.some((el) => typeof el === 'string') &&
+        values.some((el) => typeof el === 'number');
+    return isObjectIncludesNumStringValues ? (acc.push(obj) && acc) : acc;
+  }, []);
+}
+
 
