@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <input class="container-input" maxlength="64" type="text" placeholder="Please, enter your name" id="name" onkeyup="onEnter(event)">
+            <input class="container-input container-input-surname" maxlength="64" type="text" placeholder="Please, enter your surname" id="surname" onkeyup="onEnter(event)">
+            <input class="container-input container-input-phone" maxlength="13" type="tel" placeholder="Please, enter your phoneNumber(example: +380738888888)" id="tel" onkeyup="onEnter(event)">
+            <div class="container-btn">
+                <button class="btn" type="submit" id="submit-button">Submit Information</button>
+            </div>
+        </div>
+    </div>
+    <table class="table-contacts">
+        <tr>
+            <th class="table-contacts-row">Name</th>
+            <th class="table-contacts-row">Surname</th>
+            <th class="table-contacts-row">PhoneNumber</th>
+        </tr>
+    </table>
+
+    <script id="template-contact" type="text/template">
+        <tr class="table-contacts-row" id="{{IdUnique}}">
+            <td class="table-contacts-col">{{Name}}</td>
+            <td class="table-contacts-col">{{Surname}}</td>
+            <td class="table-contacts-col">{{PhoneNumber}}</td>
+        </tr>
+    </script>
+    <script src="app.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #754f4f;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.3s;
+  position: relative;
+
+  text-align: center;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0 6px 30px -10px rgba(#CCCCCC, 1);
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 10px;
+  &-input {
+    border: 1px solid rgba(191, 191, 191, .3);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 10px 10px;
+    box-shadow: 3px -5px rgba(46, 49, 49, .1);
+    outline: none;
+    color: rgba(41, 53, 32, .6);
+    &-phone {
+      width: 375px;
+    }
+    &-surname {
+      width: 275px;
+    }
+  }
+}
+
+.table-contacts {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  &-row, &-col {
+    border: 4px solid #ffd300;
+    padding: 10px 50px;
+  }
+
+  &-col {
+    padding: 10px 50px;
+  }
+}
