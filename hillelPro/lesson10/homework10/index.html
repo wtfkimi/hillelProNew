@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+</head>
+<body>
+<!-- FORM  -->
+<div class="form-wrapper">
+    <div>
+        <div class="input-wrapper">
+            <label for="name">Name:</label>
+            <input id="name" class="user-inputs" type="text" placeholder="name" />
+        </div>
+        <div id="name-validation" class="validation-msgs"></div>
+    </div>
+
+    <div>
+        <div class="input-wrapper">
+            <label for="lastName">Last name:</label>
+            <input id="lastName" class="user-inputs" type="text" placeholder="last name"/>
+        </div>
+        <div id="lastName-validation" class="validation-msgs"></div>
+    </div>
+
+    <div>
+        <div class="input-wrapper">
+            <label for="phone">Phone:</label>
+            <input id="phone" class="user-inputs" type="tel" placeholder="Phone 8 055 777 777 77"/>
+        </div>
+        <div id="phone-validation" class="validation-msgs"></div>
+    </div>
+    <button id="btn">Add</button>
+</div>
+
+<!-- TABLE -->
+<div class="table-header-wrapper">
+    <div class="table-item">Name</div>
+    <div class="table-item">Last Name</div>
+    <div class="table-item">Phone</div>
+</div>
+<div class="table-container"></div>
+<script src="./app.js"></script>
+</body>
+</html>
