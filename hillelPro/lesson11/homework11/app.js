@@ -23,15 +23,17 @@ const OPERANDSID = {
 
 const DIGITS = [
     {class: ["item", "item0", "rotate"], id:0 },
-    {class: ["item", "item1", "rotate"], id:1 },
-    {class: ["item", "item2", "rotate"], id:2 },
     {class: ["item", "item3", "rotate"], id:3 },
-    {class: ["item", "item4", "rotate"], id:4 },
-    {class: ["item", "item5", "rotate"], id:5 },
+    {class: ["item", "item2", "rotate"], id:2 },
+    {class: ["item", "item1", "rotate"], id:1 },
     {class: ["item", "item6", "rotate"], id:6 },
-    {class: ["item", "item7", "rotate"], id:7 },
+    {class: ["item", "item5", "rotate"], id:5 },
+    {class: ["item", "item4", "rotate"], id:4 },
+    {class: ["item", "item9", "rotate"], id:9 },
     {class: ["item", "item8", "rotate"], id:8 },
-    {class: ["item", "item9", "rotate"], id:9 }
+    {class: ["item", "item7", "rotate"], id:7 },
+
+
 ]
 
 function Calculator(dgs, opr) {
