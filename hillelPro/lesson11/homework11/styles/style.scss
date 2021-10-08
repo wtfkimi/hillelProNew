@@ -1,0 +1,148 @@
+.wrapper {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.container-calculator {
+  background-color: #909090;
+  border-radius: 10%;
+
+}
+
+
+.inputs-field {
+  width: 100%;
+  font-size: 35px;
+}
+
+.container-numbers-operand {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px
+}
+
+.container-input-reset {
+  margin-bottom: 30px;
+  padding: 30px
+}
+
+
+.container-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.item {
+  flex: 0 0 25.333333%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.container {
+  flex: 0 0 85%
+}
+
+
+
+.container-operand {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.sum {
+  width: 70px;
+  height: 70px;
+  background: url("../images/icons8-plus-+-70.png") no-repeat;
+}
+
+.subtraction {
+  width: 70px;
+  height: 70px;
+  background: url("../images/icons8-minus-70.png") no-repeat;
+}
+
+.multiply {
+  width: 70px;
+  height: 70px;
+  background: url("../images/icons8-multiply-70.png") no-repeat;
+}
+
+.division {
+  width: 70px;
+  height: 70px;
+  background: url("../images/icons8-divide-70.png") no-repeat;
+}
+
+.equal {
+  width: 90px;
+  height: 90px;
+  background: url("../images/icons8-equal-sign-90.png") no-repeat;
+}
+
+.cancel {
+  width: 90px;
+  height: 90px;
+  background: url("../images/icons8-cancel-90.png") no-repeat;
+}
+
+.back {
+  width: 90px;
+  height: 90px;
+  background: url("../images/back.png");
+}
+
+
+//digits
+.item {
+  cursor: pointer;
+  &0 {
+    background: url("../images/digitZero.png") no-repeat;
+  }
+  &1 {
+    background: url("../images/digitOne.png") no-repeat;
+  }
+  &2 {
+    background: url("../images/digitTwo.png") no-repeat;
+  }
+  &3 {
+    background: url("../images/digitThree.png") no-repeat;
+  }
+  &4 {
+    background: url("../images/digitFour.png") no-repeat;
+  }
+  &5 {
+    background: url("../images/digitFive.png") no-repeat;
+  }
+  &6 {
+    background: url("../images/digitSix.png") no-repeat;
+  }
+  &7 {
+    background: url("../images/digitSeven.png") no-repeat;
+  }
+  &8 {
+    background: url("../images/digitEight.png") no-repeat;
+  }
+  &9 {
+    background: url("../images/digitNine.png") no-repeat;
+  }
+}
+
+.rotate {
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+
+.clicked {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.errorDigit {
+  color: red;
+  font-size: 20px;
+}
