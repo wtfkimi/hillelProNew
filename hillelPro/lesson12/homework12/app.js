@@ -18,9 +18,10 @@ class Gamburger {
     }
     constructor(gamgurger) {
         this.gamgurger = Gamburger.GMA[gamgurger];
-        console.log(this.gamgurger)
         if (this.gamgurger === undefined){
-            console.log("Incorrect size")
+            this.gamgurger = null;
+        }else{
+            this.gamgurger = Gamburger.GMA[gamgurger];
         }
     }
 
