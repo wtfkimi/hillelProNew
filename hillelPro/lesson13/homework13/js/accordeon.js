@@ -2,7 +2,7 @@
 
 class Accordeon {
     // Accordeon working with only three items.
-    static packages = ["essential active", "standard", "pro"];
+    #packages = ["essential active", "standard", "pro"];
     static packageToItem = {
         essential: "item0",
         standard: "item1",
@@ -15,7 +15,7 @@ class Accordeon {
         const itemChildren = [...items.children];
         const children = [...el.children];
         children.forEach((el, index )=> {
-            el.classList += Accordeon.packages[index];
+            el.classList += this.#packages[index];
         })
         itemChildren.forEach((el, index ) => {
             el.classList.remove("none")
