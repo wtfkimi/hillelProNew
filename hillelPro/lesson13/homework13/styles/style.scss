@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-items {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.active {
+  border-bottom: 1px solid red;
+}
+
+
+.accordeon {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+
+.items-product {
+  display: flex;
+  justify-content: space-around;
+}
+
+.none {
+  display: none;
+}
+
+
+
+.item0, .item1, .item2 {
+  display: none;
+}
+
+
+.active {
+  border-bottom: 1px solid red;
+}
+
+.accordeon, .essential, .pro {
+  padding: 0 50px;
+}
+
+.activeItem {
+  display: block;
+  transition: transform 1.5s ease-in-out;
+}
+
+.item {
+  padding: 10px 20px;
+  border: 3px solid #FF7A00;
+  border-radius: 5%;
+}
+
+
+.package-name {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 48px;
+  color: #222;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.month {
+  margin: 10px 0;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 13px 35px
+}
+
+.free {
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 10px;
+  width: 40%;
+  border: 1px solid #066fac;
+  color: #004588;
+  background-color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.buy {
+  width: 40%;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  background-color: #066fac;
+  color: #fff;
+}
+
+.everything {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.package-list {
+  font-size: 16px;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 0;
+  padding: 10px 11px 10px 17px;
+  position: relative;
+  line-height: 24px;
+  &:before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #222;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 20px;
+  }
+}
+
+
+.rotate {
+  transform: rotate(360deg);
+}
