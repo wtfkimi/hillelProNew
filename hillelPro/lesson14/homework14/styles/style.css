@@ -1,0 +1,100 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/background.jpeg");
+}
+
+.flex {
+  display: flex;
+  left: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/playstation.png");
+}
+
+.link {
+  background-color: #fd6f0b61;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  border-top: 7px solid #9dd9ff;
+  border-bottom: 7px solid #9dd9ff;
+  font-size: 22px;
+  text-align: center;
+  padding: 23px 30px;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 2s, border 1s;
+  width: 100%;
+  max-width: 250px;
+  min-width: 10ch;
+  box-sizing: border-box;
+}
+.link:first-child {
+  border-left: 7px solid #9dd9ff;
+}
+.link:last-child {
+  border-right: 7px solid #9dd9ff;
+}
+.link:hover {
+  border-bottom: 7px solid #000000;
+  background-color: #FFCCCC;
+}
+
+.burger {
+  display: none;
+}
+
+@media (min-width: 340px) and (max-width: 1060px) {
+  .header-nav {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    border: 7px solid #9dd9ff;
+    bottom: -5%;
+    left: -100%;
+  }
+
+  .link {
+    max-width: 100%;
+  }
+
+  .logo {
+    margin-right: 20px;
+  }
+
+  .burger {
+    display: block;
+    background-size: cover;
+    background-image: url("../img/burger.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 1060px) {
+  .header-nav {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
