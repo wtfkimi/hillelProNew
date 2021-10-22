@@ -14,3 +14,10 @@ burger.addEventListener('click', () => {
         nav.style.left = "-100%"
     }
 })
+
+nav.addEventListener("click", (e) => {
+    if (e.target.classList.contains("link")) {
+        burger.style.backgroundImage = "url(\"img/burger.png\")"
+        nav.style.left = "-100%"
+    }
+})
