@@ -63,7 +63,7 @@ function renderUser(user) {
 
 function createUserContainer (user) {
     const divUser = createElement('div', ['user'])
-    const divName = createElement("div", ['div-name'], user.name, user.id);
+    const divName = createElement("div", ['nameEl'], user.name, user.id);
     const btnDelete = createElement("button", ['btn', 'delete'], 'Delete');
     const btnEdit = createElement("button", ['btn', 'edit'], 'Edit');
     const editInput = createElement("input", ['inputEdit'], '', '', 'Edit user and click.');
@@ -75,6 +75,8 @@ function editUser(e) {
     if ([...e.target.classList].includes('edit') && e.target.nextElementSibling.value) {
         const nameToChange = e.target.previousElementSibling.previousElementSibling
         nameToChange.textContent = e.target.nextElementSibling.value;
+    }else if ([...e.target.classList].includes('edit') && !e.target.nextElementSibling.value) {
+        alert('No value in input!!!')
     }
 }
 
