@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+}
+
+.container-form {
+  flex: auto;
+}
+
+.btn {
+  width: 140px;
+  padding: 30px 15px;
+  background-color: #3cbe1c;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.form-auth {
+  width: 50%;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #70ffdf;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  font-size: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.input-form {
+  margin-bottom: 10px;
+}
+
+body {
+  font-size: 20px;
+}
+
+.error, .errorMessage {
+  padding: 10px 0;
+  color: red;
+}
+
+.error, .container-center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
