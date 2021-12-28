@@ -1,0 +1,21 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+#main-container {
+  min-height: 60%;
+  width: 100%;
+}
+
+.header {
+  height: 20%;
+  width: 100%;
+  background-color: lightgreen;
+}
+.footer {
+  height: 20%;
+  width: 100%;
+  background-color: lightgrey;
+}
