@@ -65,5 +65,5 @@ class Gamburger {
 const burger = new Gamburger("SMALL");
 
 burger.setFilling = "salad"
-burger.getCalories;
-burger.getPrice;
+console.log(burger.getCalories);
+console.log(burger.getPrice);
